@@ -24,14 +24,24 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
-});
-
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
     Route::get('/', function () {
         return view('welcome');
     });
     Route::get('/home', 'HomeController@index');
+
+    // Profile
+    Route::get('settings', [
+        'middleware' => 'auth',
+        'uses'       => 'ProfileController@edit',
+    ]);
+    Route::put('settings', [
+        'middleware' => 'auth',
+        'uses'       => 'ProfileController@update',
+    ]);
+    Route::post('profile/updatePic', [
+        'middleware' => 'auth',
+        'uses'       => 'ProfileController@updatePic',
+    ]);
 });
