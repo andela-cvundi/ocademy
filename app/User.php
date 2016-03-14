@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'username', 'email', 'password', 'provider_id', 'avatar', 'provider', 'info',
     ];
 
     /**
@@ -23,4 +23,41 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    //User has many tutorials.
+    public function tutorials()
+    {
+        return $this->hasMany('Learn\Tutorial');
+    }
+
+     /**
+     * Get the avatar from gravatar.
+     *
+     * @return string
+     */
+    private function getAvatarFromGravatar()
+    {
+        return 'http://www.gravatar.com/avatar/'.md5(strtolower(trim($this->email))).'?d=mm&s=500';
+    }
+
+    /**
+     * Get avatar from the model.
+     *
+     * @return string
+     */
+    public function getAvatar()
+    {
+        return (!is_null($this->avatar)) ? $this->avatar : $this->getAvatarFromGravatar();
+    }
+
+    /**
+     * Update user avatar
+     *
+     * return void
+     */
+    public function updateAvatar($url)
+    {
+        $this->avatar = $url;
+        $this->save();
+    }
 }
