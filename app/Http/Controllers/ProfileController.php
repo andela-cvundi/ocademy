@@ -31,7 +31,8 @@ class ProfileController extends Controller
             'info'      => 'max:200',
         ]);
         Auth::user()->update($request->all());
-        return redirect()->back()->with('status', 'Profile info Updated successfully');
+        \Session::flash('flash_message', 'Profile updated successfully.');
+        return redirect()->back();
     }
 
     /**
