@@ -32,11 +32,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/home', 'HomeController@index');
 
     // Profile
-    Route::get('settings', [
+    Route::get('profile/settings', [
         'middleware' => 'auth',
         'uses'       => 'ProfileController@edit',
     ]);
-    Route::put('settings', [
+    Route::post('profile/settings', [
         'middleware' => 'auth',
         'uses'       => 'ProfileController@update',
     ]);
