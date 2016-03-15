@@ -46,6 +46,7 @@ class ProfileController extends Controller
         $img = $request->file('avatar');
         Cloudder::upload($img);
         User::find(Auth::user()->id)->updateAvatar(Cloudder::getResult()['url']);
-        return redirect()->back()->with('status', 'Avatar updated successfully');
+        \Session::flash('flash_message', 'Avatar updated successfully.');
+        return redirect()->back();
     }
 }
