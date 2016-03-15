@@ -61,15 +61,15 @@
                     <hr>
                     <div class="social-auth-links text-center">
                         <p>- OR -</p>
-                        <a href="http://ocademy.dev/auth/facebook" class="btn btn-block btn-facebook">
+                        <a href="http://ocademy.dev/auth/facebook" class="btn btn-facebook">
                             <i class="fa fa-facebook"></i>
                                 Sign in with Facebook
                         </a>
-                        <a href="http://ocademy.dev/auth/twitter" class="btn btn-block btn-twitter">
+                        <a href="http://ocademy.dev/auth/twitter" class="btn btn-twitter">
                             <i class="fa fa-twitter"></i>
                                 Sign in with Twitter
                         </a>
-                        <a href="http://ocademy.dev/auth/github" class="btn btn-block btn-github">
+                        <a href="http://ocademy.dev/auth/github" class="btn btn-github">
                             <i class="fa fa-github-alt"></i>
                                 Sign in with Github
                         </a>
