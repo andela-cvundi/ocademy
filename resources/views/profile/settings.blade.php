@@ -12,15 +12,11 @@
             <form name="avatar" role="form" method="POST" action="{{ url('/profile/updatePic') }}" enctype="multipart/form-data">
                 {!! csrf_field() !!}
                 <h6>Change avatar</h6>
-                <input type="file" class="form-control" name="avatar" id="avatar">
+                <input type="file" class="form-control" name="avatar" id="avatar" accept="image/*">
                 <br>
                 <button type="submit" class="btn profile-button form-group button-center" name="upload">Upload</button>
             </form>
-            <!-- <a href="#" id="changeProfPic">Change your profile pic</a> -->
             @endif
-            <!-- <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
-            <h6>Change avatar</h6>
-            <input type="file" class="form-control"> -->
         </div>
 
     </div>

@@ -5749,4 +5749,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+img.nav-avatar {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle; }
+
 /*# sourceMappingURL=app.css.map */
