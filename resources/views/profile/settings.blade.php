@@ -7,10 +7,22 @@
     <!-- left column -->
     <div class="col-md-3">
         <div class="text-center">
-            <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
-            <h6>Upload a different photo...</h6>
-            <input type="file" class="form-control">
+            <img src="{{ $user->getAvatar() }}" class="avatar img-circle" alt="avatar" height="125" width="125">
+            @if(Auth::user()->id == $user->id)
+            <form name="avatar" role="form" method="POST" action="{{ url('/profile/updatePic') }}" enctype="multipart/form-data">
+                {!! csrf_field() !!}
+                <h6>Change avatar</h6>
+                <input type="file" class="form-control" name="avatar" id="avatar">
+                <br>
+                <button type="submit" class="btn profile-button form-group button-center" name="upload">Upload</button>
+            </form>
+            <!-- <a href="#" id="changeProfPic">Change your profile pic</a> -->
+            @endif
+            <!-- <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+            <h6>Change avatar</h6>
+            <input type="file" class="form-control"> -->
         </div>
+
     </div>
     <!-- edit form column -->
     <div class="col-md-9 personal-info">
