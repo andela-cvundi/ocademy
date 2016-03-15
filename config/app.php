@@ -147,8 +147,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        JD\Cloudder\CloudderServiceProvider::class,
-
 
         /*
          * Application Service Providers...
@@ -157,6 +155,12 @@ return [
         Ocademy\Providers\AuthServiceProvider::class,
         Ocademy\Providers\EventServiceProvider::class,
         Ocademy\Providers\RouteServiceProvider::class,
+
+        /**
+         * Other service providers
+         */
+        JD\Cloudder\CloudderServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -204,6 +208,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'Cloudder'  => JD\Cloudder\Facades\Cloudder::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
 
     ],
