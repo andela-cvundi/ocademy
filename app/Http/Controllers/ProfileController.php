@@ -31,8 +31,8 @@ class ProfileController extends Controller
             'info'      => 'max:200',
         ]);
         Auth::user()->update($request->all());
-        \Session::flash('flash_message', 'Profile updated successfully.');
-        return redirect()->back();
+
+        return redirect()->back()->with('status', 'Profile info updated successfully.');
     }
 
     /**
@@ -46,7 +46,6 @@ class ProfileController extends Controller
         $img = $request->file('avatar');
         Cloudder::upload($img);
         User::find(Auth::user()->id)->updateAvatar(Cloudder::getResult()['url']);
-        \Session::flash('flash_message', 'Avatar updated successfully.');
-        return redirect()->back();
+        return redirect()->back()->with('status', 'Avatar updated successfully.');
     }
 }
