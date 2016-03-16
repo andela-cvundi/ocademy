@@ -12,10 +12,10 @@ class Tutorial extends Model
 
     public function category()
     {
-        return $this->belongsTo('Techademia\Category');
+        return $this->belongsTo('Ocademy\Category');
     }
     public function user()
     {
-        return $this->belongsTo('Techademia\User');
+        return $this->belongsTo('Ocademy\User');
     }
 }
