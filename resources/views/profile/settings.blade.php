@@ -22,7 +22,6 @@
     </div>
     <!-- edit form column -->
     <div class="col-md-9 personal-info">
-    @include('errors.formerrors')
     @include('partials.flash')
 
         <h3>Personal info</h3>

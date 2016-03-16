@@ -8,7 +8,7 @@ use Ocademy\Category;
 use Illuminate\Http\Request;
 use Ocademy\Http\Requests;
 
-class TutorialController extends Controller
+class TutorialsController extends Controller
 {
     public function __construct()
     {
@@ -25,6 +25,17 @@ class TutorialController extends Controller
         $categories = Category::all();
         return view('pages.upload', compact('categories'));
     }
+
+    /**
+     * Get the page to create a new titorial
+     * @return view
+     */
+    public function create()
+    {
+        $categories = Category::all();
+        return view('tutorials.create', compact('categories'));
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -43,10 +54,24 @@ class TutorialController extends Controller
         $url = end($url);
         $request['url'] = $url;
         $request['user_id'] = Auth::user()->id;
-        Project::create($request->all());
-        \Session::flash('flash_message', 'Tutorial uploaded successfully.');
-        return redirect('/dashboard');
+        $request['category_id'] = $request->category;
+        Tutorial::create($request->all());
+
+        return redirect('/')->with('status', 'Tutorial created successfully.');
     }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $tutorial = Tutorial::findOrFail($id);
+        return view('tutorials.show')->with('tutorial', $tutorial);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -79,9 +104,8 @@ class TutorialController extends Controller
 
         $tutorial = Tutorial::findOrFail($id);
         $tutorial->update($request->all());
-        \Session::flash('flash_message', 'Tutorial info updated successfully.');
 
-        return redirect()->back();
+        return redirect()->back()->with('status', 'Tutorial info updated successfully.');
     }
 
 
