@@ -69,7 +69,7 @@ class TutorialsController extends Controller
     public function show($id)
     {
         $tutorial = Tutorial::findOrFail($id);
-        return view('tutorials.show')->with('tutorial', $tutorial);
+        return view('tutorials.show', compact('tutorial'));
     }
 
     /**
@@ -83,7 +83,7 @@ class TutorialsController extends Controller
         $tutorial = Tutorial::find($id);
         $categories = Category::all();
 
-        return view('pages.edittut')->compact('tutorial', 'categories');
+        return view('tutorials.edit', compact('tutorial', 'categories'));
     }
 
     /**
@@ -99,8 +99,12 @@ class TutorialsController extends Controller
             'title'       => 'required|max:255',
             'description' => 'required|max:255',
             'category'    => 'required',
-            'url'         => 'required',
+            'url'         => 'required|youtube',
         ]);
+
+        $url = explode('=', $request->input('url'));
+        $url = end($url);
+        $request['url'] = $url;
 
         $tutorial = Tutorial::findOrFail($id);
         $tutorial->update($request->all());
@@ -114,10 +118,10 @@ class TutorialsController extends Controller
      * @param  [type] $id [description]
      * @return [type]     [description]
      */
-    public function delete($id)
+    public function destroy($id)
     {
         Tutorial::destroy($id);
 
-        return redirect('/dashboard');
+        return redirect('/');
     }
 }
