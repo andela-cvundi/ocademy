@@ -12,7 +12,7 @@ class TutorialsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['only' => ['index', 'store', 'edit','update', 'delete']]);
+        $this->middleware('auth', ['only' => ['index', 'store', 'edit','update', 'delete', 'like']]);
     }
 
     /**
@@ -69,7 +69,8 @@ class TutorialsController extends Controller
     public function show($id)
     {
         $tutorial = Tutorial::findOrFail($id);
-        return view('tutorials.show', compact('tutorial'));
+        $likes = $tutorial->likeCount;
+        return view('tutorials.show', compact('tutorial', 'likes'));
     }
 
     /**
@@ -112,6 +113,18 @@ class TutorialsController extends Controller
         return redirect()->back()->with('status', 'Tutorial info updated successfully.');
     }
 
+    public function like($id)
+    {
+        $tutorial = Tutorial::find($id);
+
+        if ($tutorial->liked()) {
+            $tutorial->unlike();
+            return ['message' => 'unliked'];
+        } else {
+            $tutorial->like();
+            return ['message' => 'liked'];
+        }
+    }
 
     /**
      * [deleteTutorial description]
