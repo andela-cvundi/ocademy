@@ -54,7 +54,7 @@ $(document).ready(function() {
                 newComment += '</div>';
                 newComment += '</li>';
 
-                $('.media-list').append(newComment);
+                $('.media-list').prepend(newComment);
             });
         }
     });
