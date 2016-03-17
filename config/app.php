@@ -161,6 +161,7 @@ return [
          */
         JD\Cloudder\CloudderServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+        \Conner\Likeable\LikeableServiceProvider::class,
 
     ],
 
