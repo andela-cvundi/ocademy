@@ -5,6 +5,7 @@ namespace Ocademy\Http\Controllers;
 use Auth;
 use Ocademy\Tutorial;
 use Ocademy\Category;
+use Ocademy\Comment;
 use Illuminate\Http\Request;
 use Ocademy\Http\Requests;
 
@@ -12,7 +13,7 @@ class TutorialsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['only' => ['index', 'store', 'edit','update', 'delete', 'like']]);
+        $this->middleware('auth', ['only' => ['index', 'store', 'edit','update', 'delete', 'like', 'comment']]);
     }
 
     /**
@@ -70,7 +71,9 @@ class TutorialsController extends Controller
     {
         $tutorial = Tutorial::findOrFail($id);
         $likes = $tutorial->likeCount;
-        return view('tutorials.show', compact('tutorial', 'likes'));
+        $comments = $tutorial->comments()->get();
+
+        return view('tutorials.show', compact('tutorial', 'likes', 'comments'));
     }
 
     /**
@@ -125,6 +128,24 @@ class TutorialsController extends Controller
             return ['message' => 'liked'];
         }
     }
+
+    /**
+     * Comment on a project.
+     *
+     * @return  user and the comment
+     */
+    public function comment(Request $request)
+    {
+        $comment = new Comment();
+        $comment->comment = $request->input('comment');
+        $comment->user_id = Auth::user()->id;
+        $comment->tutorial_id = $request->input('video_id');
+        $comment->save();
+        $comment->time = $comment->created_at->diffForHumans();
+        $user = Auth::user();
+        return compact('user', 'comment');
+    }
+
 
     /**
      * [deleteTutorial description]
