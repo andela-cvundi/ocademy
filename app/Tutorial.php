@@ -20,4 +20,12 @@ class Tutorial extends Model
     {
         return $this->belongsTo('Ocademy\User');
     }
+
+    /**
+     * Project has many comments relationship.
+     */
+    public function comments()
+    {
+        return $this->hasMany('Ocademy\Comment');
+    }
 }
