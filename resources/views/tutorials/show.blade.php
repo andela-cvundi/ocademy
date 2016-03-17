@@ -5,6 +5,8 @@
     <div class="col-md-12">
         <h2>{{ $tutorial->title }}</h2>
         <iframe width="100%" height="500" src="http://www.youtube.com/embed/{{ $tutorial->url }}" allowfullscreen></iframe>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <i id="like" class="fa fa-heart" data-video-id="{{ $tutorial->id }}"></i><span id="count"> {{ $tutorial->likeCount }}</span>
     </div>
 
 
@@ -25,6 +27,5 @@
     @endif
     </div>
     </div>
-
 </div>
 @endsection
