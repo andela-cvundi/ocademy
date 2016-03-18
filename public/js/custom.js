@@ -41,20 +41,20 @@ $(document).ready(function() {
             addNewComment.done(function (response) {
                 $('#comment').val('');
                 var newComment = '';
-                newComment = '<li class="media">';
-                newComment += '<a class="media-left" href="#">';
-                newComment += '<img class="media-object img-circle img-thumbnail" src='+ response.user.avatar +' style="width:100px;">';
-                newComment += '</a>';
-                newComment += '<div class="media-body">';
-                newComment += '<div class="well">'
-                newComment += '<h4 class="media-heading">'+ response.user.name +'</h4>';
-                newComment += '<h6 class="pull-right">1 second ago </h6>';
-                newComment += '<p class="media-comment">' + comment + '</p>';
+
+                newComment = '<li class="comment">';
+                newComment += '<article>';
+                newComment += '<img class="avatar" src='+ response.user.avatar +' alt="userAvatar" width="50px" height="50px">';
+                newComment += '<div class="comment-meta">';
+                newComment += '<h6 class="author">' + response.user.name + ', 1 second ago </h6>';
                 newComment += '</div>';
+                newComment += '<div class="comment-body">';
+                newComment += '<p>' + comment + '</p>';
                 newComment += '</div>';
+                newComment += '</article>';
                 newComment += '</li>';
 
-                $('.media-list').prepend(newComment);
+                $('.comments-list').prepend(newComment);
             });
         }
     });
