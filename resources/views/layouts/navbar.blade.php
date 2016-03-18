@@ -1,41 +1,34 @@
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-
-            <!-- Collapsed Hamburger -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
-                Laravel
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url('/home') }}">Home</a></li>
+<div class="header">
+    <div class="collapse" id="exCollapsingNavbar">
+        <div class="bg-inverse p-a">
+            <h4>Main Menu</h4>
+            <ul>
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="#">Tutorials</a></li>
             </ul>
-
-            <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Authentication Links -->
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-inverse bg-faded">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+        ☰
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+            <a class="navbar-brand" href="{{ url('/') }}">Ocademy</a>
+            <ul class="nav navbar-nav pull-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tutorials</a>
+                </li>
                 @if (Auth::guest())
-                    <li><a href="{{ url('/login') }}">Login</a></li>
-                    <li><a href="{{ url('/register') }}">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/register') }}">Register</a></li>
                 @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">
                             <img src="{{ Auth::user()->getAvatar() }}" class="nav-avatar img-circle">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
-                        <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu" role="menu" style="background: #3F4B5B">
                             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             <li><a href="{{ url('/profile/settings') }}"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
                         </ul>
@@ -43,5 +36,5 @@
                 @endif
             </ul>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
