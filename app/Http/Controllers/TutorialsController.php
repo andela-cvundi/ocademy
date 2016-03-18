@@ -17,6 +17,17 @@ class TutorialsController extends Controller
     }
 
     /**
+     * Landing page
+     *
+     * @return view
+     */
+    public function welcome()
+    {
+        $tutorials = Tutorial::all();
+        return view('welcome', compact('tutorials'));
+    }
+
+    /**
      * Display all projects.
      *
      * @return view
