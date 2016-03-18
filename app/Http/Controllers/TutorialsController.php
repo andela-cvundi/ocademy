@@ -82,7 +82,7 @@ class TutorialsController extends Controller
     {
         $tutorial = Tutorial::findOrFail($id);
         $likes = $tutorial->likeCount;
-        $comments = $tutorial->comments()->get();
+        $comments = $tutorial->comments()->latest()->get();
 
         return view('tutorials.show', compact('tutorial', 'likes', 'comments'));
     }
