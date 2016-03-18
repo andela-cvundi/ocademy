@@ -11,9 +11,7 @@
 </head>
 <body id="app-layout">
     @include('layouts.navbar')
-    <div class="container">
-        @yield('content')
-    </div>
+    @yield('content')
     <!-- JavaScript -->
     @include('layouts.js')
 </html>
