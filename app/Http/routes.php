@@ -51,6 +51,7 @@ Route::group(['middleware' => 'web'], function () {
     //Tutorials
     Route::resource('tutorials', 'TutorialsController');
     Route::post('tutorials/comment', 'TutorialsController@comment');
+    Route::get('category/{category_id}', 'TutorialsController@getByCategory');
 
     //likes
     Route::post("/tutorials/{id}/like", "TutorialsController@like");
