@@ -23,7 +23,7 @@ class TutorialsController extends Controller
      */
     public function welcome()
     {
-        $tutorials = Tutorial::all();
+        $tutorials = Tutorial::all()->paginate(12);
         return view('welcome', compact('tutorials'));
     }
 
@@ -35,7 +35,21 @@ class TutorialsController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('pages.upload', compact('categories'));
+        $tutorials = Tutorial::all();
+        return view('tutorials.all', compact('categories', 'tutorials'));
+    }
+
+    /**
+     * Get tutorials by category
+     *
+     * @return view
+     */
+    public function getByCategory($category_id)
+    {
+        $category_id = (int)$category_id;
+        $categories = Category::all();
+        $tutorials = Tutorial::where('category_id', $category_id)->get();
+        return view('tutorials.all', compact('categories', 'tutorials'));
     }
 
     /**
