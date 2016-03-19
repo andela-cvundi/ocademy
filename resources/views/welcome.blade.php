@@ -33,5 +33,6 @@
         @endforeach
         </div>
     </div>
+    {!! $tutorials->links() !!}
 </div>
 @endsection
