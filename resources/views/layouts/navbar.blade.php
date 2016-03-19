@@ -16,7 +16,7 @@
             <a class="navbar-brand" href="{{ url('/') }}">Ocademy</a>
             <ul class="nav navbar-nav pull-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tutorials</a>
+                    <a class="nav-link" href="{{ url('/tutorials') }}">Tutorials</a>
                 </li>
                 @if (Auth::guest())
                     <li class="nav-item"><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
