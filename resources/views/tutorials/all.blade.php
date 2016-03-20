@@ -15,8 +15,11 @@
                 </ul>
             </div>
         </div>
-        @if ()
+
+        @if (Request::is('tutorials'))
         <h2>All Courses</h2>
+        @endif
+
         <div class="row">
         @foreach ($tutorials as $tutorial)
             <div class="col-md-4">
