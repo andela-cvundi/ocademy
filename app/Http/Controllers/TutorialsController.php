@@ -35,7 +35,7 @@ class TutorialsController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $tutorials = Tutorial::all();
+        $tutorials = Tutorial::latest()->paginate(12);
         return view('tutorials.all', compact('categories', 'tutorials'));
     }
 
@@ -48,7 +48,7 @@ class TutorialsController extends Controller
     {
         $category_id = (int)$category_id;
         $categories = Category::all();
-        $tutorials = Tutorial::where('category_id', $category_id)->get();
+        $tutorials = Tutorial::where('category_id', $category_id)->paginate(12);
         return view('tutorials.all', compact('categories', 'tutorials'));
     }
 
