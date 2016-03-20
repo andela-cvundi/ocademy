@@ -34,22 +34,9 @@ $factory->define(Ocademy\Category::class, function (Faker\Generator $faker) {
 $factory->define(Ocademy\Tutorial::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->name,
-        'url' => 'https://www.youtube.com/watch?v=9FipWCyIF4Y',
+        'url' => '9FipWCyIF4Y',
         'description' => $faker->paragraph($nbSentences = 2, $variableNbSentences = true),
         'user_id' => 1,
-        'views' => rand(1, 100),
-    ];
-});
-$factory->define(Ocademy\Comment::class, function (Faker\Generator $faker) {
-    return [
-        'comment' => $faker->sentence,
-        'video_id' => rand(1, 11),
-        'user_id' => rand(1, 10),
-    ];
-});
-$factory->define(Ocademy\Favorite::class, function (Faker\Generator $faker) {
-    return [
-        'video_id' => rand(1, 11),
-        'user_id' => rand(1, 10),
+        'category_id' => 1,
     ];
 });
