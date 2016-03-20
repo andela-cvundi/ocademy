@@ -23,7 +23,7 @@ class TutorialsController extends Controller
      */
     public function welcome()
     {
-        $tutorials = Tutorial::all()->paginate(12);
+        $tutorials = Tutorial::latest()->paginate(9);
         return view('welcome', compact('tutorials'));
     }
 
