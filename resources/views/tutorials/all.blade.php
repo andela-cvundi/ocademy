@@ -41,6 +41,9 @@
             </div>
         @endforeach
         </div>
+        <div class="text-center">
+            {!! $tutorials->links() !!}
+        </div>
     </div>
 </div>
 @endsection
