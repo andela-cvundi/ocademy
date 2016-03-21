@@ -47,6 +47,10 @@ Route::group(['middleware' => 'web'], function () {
         'middleware' => 'auth',
         'uses'       => 'ProfileController@updatePic',
     ]);
+    Route::get('profile/tutorials', [
+        'middleware' => 'auth',
+        'uses'       => 'ProfileController@myTutorials',
+    ]);
 
     //Tutorials
     Route::resource('tutorials', 'TutorialsController');
