@@ -30,7 +30,7 @@
 
                         <ul class="dropdown-menu" role="menu" style="background: #3F4B5B">
                             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            <li><a href="{{ url('/profile/settings') }}"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
+                            <li><a href="{{ url('/profile/tutorials') }}"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
                         </ul>
                     </li>
                 @endif
