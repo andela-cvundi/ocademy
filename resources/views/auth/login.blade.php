@@ -1,82 +1,84 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                        {!! csrf_field() !!}
+<div id="login-page">
+    <div class="container">
+        <form class="form-login" role="form" method="POST" action="{{ url('/login') }}">
+            {!! csrf_field() !!}
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">E-Mail Address</label>
+            <h2 class="form-login-heading">sign in now</h2>
+            <div class="login-wrap">
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                    <input type="email" name="email" class="form-control" value="{{ old('email') }}" placeholder="Email" autofocus="">
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
+                </div>
 
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                    <input type="password" name="password" class="form-control" placeholder="Password" autofocus="">
+                    @if ($errors->has('password'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                    @endif
+                </div>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input type="password" class="form-control" name="password">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember"> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-sign-in"></i>Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
-                            </div>
-                        </div>
-                    </form>
-                    <hr>
-                    <div class="social-auth-links text-center">
-                        <p>- OR -</p>
-                        <a href="http://ocademy.dev/auth/facebook" class="btn btn-facebook">
-                            <i class="fa fa-facebook"></i>
-                                Sign in with Facebook
+                <label class="checkbox">
+                    <span class="pull-right">
+                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
+                    </span>
+                </label>
+                <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+                <hr>
+                <div class="login-social-link centered">
+                    <p style="text-align: center">-OR-</p>
+                    <div class="center-button">
+                        <a href="http://ocademy.dev/auth/facebook" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="http://ocademy.dev/auth/twitter" class="btn btn-twitter" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+                        <a href="http://ocademy.dev/auth/github" class="btn btn-github"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+                <div class="registration">
+                    Don't have an account yet?
+                    <br>
+                    <a class="" href="#">
+                        Create an account
                         </a>
-                        <a href="http://ocademy.dev/auth/twitter" class="btn btn-twitter">
-                            <i class="fa fa-twitter"></i>
-                                Sign in with Twitter
-                        </a>
-                        <a href="http://ocademy.dev/auth/github" class="btn btn-github">
-                            <i class="fa fa-github-alt"></i>
-                                Sign in with Github
-                        </a>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Forgot Password ?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Enter your e-mail address below to reset your password.</p>
+                            <!-- <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix"> -->
+                        </div>
+                        <div class="modal-footer">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                            <button class="btn btn-theme" type="button">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- modal -->
+        </form>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="{{ url('/js/jquery.backstretch.min.js') }}"></script>
+<script>
+$.backstretch("{{ url('/images/hero.jpg') }}", {
+    speed: 500
+});
+</script>
+<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 805px; z-index: -999999; position: fixed;"><img src="{{ url('/images/hero.jpg') }}" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1207.27px; height: 805px; max-width: none; z-index: -999999; left: -212.636px; top: 0px;"></div>
 @endsection
