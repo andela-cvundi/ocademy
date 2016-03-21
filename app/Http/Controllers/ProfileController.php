@@ -3,8 +3,9 @@
 namespace Ocademy\Http\Controllers;
 
 use Auth;
-use Ocademy\User;
 use Cloudder;
+use Ocademy\User;
+use Ocademy\Tutorial;
 use Illuminate\Http\Request;
 use Ocademy\Http\Requests;
 
@@ -17,7 +18,7 @@ class ProfileController extends Controller
     public function edit()
     {
         $user = Auth::user();
-        return view('profile.settings', compact('user'));
+        return view('dashboard.settings', compact('user'));
     }
     /**
      * Update user details.
@@ -47,5 +48,14 @@ class ProfileController extends Controller
         Cloudder::upload($img);
         User::find(Auth::user()->id)->updateAvatar(Cloudder::getResult()['url']);
         return redirect()->back()->with('status', 'Avatar updated successfully.');
+    }
+
+    /**
+     * Display all tutorials from user
+     */
+    public function myTutorials()
+    {
+        $tutorials = Tutorial::where('user_id', Auth::user()->id)->paginate(12);
+        return view('dashboard.tutorials', compact('tutorials'));
     }
 }
