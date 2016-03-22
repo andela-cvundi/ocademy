@@ -13,7 +13,7 @@ class TutorialsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['only' => ['index', 'store', 'edit','update', 'delete', 'like', 'comment']]);
+        $this->middleware('auth', ['only' => ['store', 'edit','update', 'delete', 'like', 'comment']]);
     }
 
     /**
