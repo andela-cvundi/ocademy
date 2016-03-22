@@ -58,4 +58,14 @@ $(document).ready(function() {
             });
         }
     });
+
+    $('.delete-tutorial').on('click', function (e)
+    {
+        e.preventDefault();
+        $x = $.ajax({
+            method: 'DELETE',
+            url: $(this).attr('href')
+        });
+        window.location.href = '/profile/tutorials';
+    });
 });
