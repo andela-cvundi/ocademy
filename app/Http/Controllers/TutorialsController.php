@@ -77,7 +77,7 @@ class TutorialsController extends Controller
             'url'         => 'required|youtube',
         ]);
         $url = explode('=', $request->input('url'));
-        $url = end($url);
+        $url = substr((end($url)), 0, 11);
         $request['url'] = $url;
         $request['user_id'] = Auth::user()->id;
         $request['category_id'] = $request->category;
