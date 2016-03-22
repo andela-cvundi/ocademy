@@ -8,9 +8,11 @@
                     <div class="container">
                         <div class="row">
                             <h2>My tutorials
-                                <button type="button" class="btn btn-default btn-lg pull-right my-button">
-                                    <i class="fa fa-plus"></i>  Add Tutorial
-                                </button>
+                                <a href="{{ url('tutorials/create') }}">
+                                    <button type="button" class="btn btn-default pull-right my-button">
+                                        <i class="fa fa-plus"></i>  Add Tutorial
+                                    </button>
+                                </a>
                             </h2>
                         </div>
                         <div class="row">
