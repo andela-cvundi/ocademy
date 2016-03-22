@@ -15,7 +15,7 @@
                                 <h6>Change avatar</h6>
                                 <input type="file" class="form-control" name="avatar" id="avatar" accept="image/*">
                                 <br>
-                                <button type="submit" class="btn profile-button form-group button-center" name="upload">Upload</button>
+                                <button type="submit" class="btn button-center btn-flat my-button" name="upload">Upload</button>
                             </form>
                             @endif
                         </div>
@@ -54,7 +54,7 @@
                                 <label class="col-md-3 control-label"></label>
                                 <div class="col-md-8 text-center">
                                     <br>
-                                    <input type="submit" class="btn btn-primary" value="Save Changes">
+                                    <input type="submit" class="btn btn-primary btn-flat my-button" value="Save Changes">
                                     <span></span>
                                     <input type="reset" class="btn btn-default" value="Cancel">
                                 </div>
