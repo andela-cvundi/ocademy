@@ -83,7 +83,7 @@ class TutorialsController extends Controller
         $request['category_id'] = $request->category;
         Tutorial::create($request->all());
 
-        return redirect('/')->with('status', 'Tutorial created successfully.');
+        return redirect('/profile/tutorials');
     }
 
     /**
@@ -181,6 +181,6 @@ class TutorialsController extends Controller
     {
         Tutorial::destroy($id);
 
-        return redirect('/');
+        return redirect('/profile/tutorials');
     }
 }
