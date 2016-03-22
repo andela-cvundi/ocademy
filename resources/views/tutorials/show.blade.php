@@ -13,6 +13,13 @@
                 <meta name="csrf-token" content="{{ csrf_token() }}">
                 <i id="like" class="fa fa-heart" tutorial-id="{{ $tutorial->id }}"></i><span id="count"> {{ $tutorial->likeCount }}</span>
                 <i class="fa fa-comment"></i><span  id="comment-count"> {{ $tutorial->comments->count() }}</span>
+                @if (Auth::user())
+                    @if (Auth::user()->id == $tutorial->user_id)
+                    <span class="pull-right"><a href="{{ route('tutorials.destroy', ['id' => $tutorial->id]) }}" class="delete-tutorial"><button class="btn btn-danger btn-flat">Delete tut</button></a></span>
+                    <span class="pull-right" style="margin-right: 20px"><a href="{{ url('tutorials/'.$tutorial->id.'/edit') }}"><button class="btn btn-primary my-button">Edit tut</button></a></span>
+                    @endif
+                @endif
+
                 <div class="course-info">
                     <p>{{ $tutorial->description }}</p>
                 </div>
@@ -47,7 +54,7 @@
                     <div class="form-group">
                         <textarea class="form-control" rows="3" id="comment" name="comment" data-id="{{ $tutorial->id }}" required></textarea>
                     </div>
-                    <button class="btn btn-primary" id="createComment" tutorial-id="{{ $tutorial->id }}">Submit</button>
+                    <button class="btn btn-primary btn-flat my-button" id="createComment" tutorial-id="{{ $tutorial->id }}">Submit</button>
                 @else
                 <div class="well">
                     <h4>Login to comment</h4>
