@@ -44,7 +44,7 @@
                 <div class="registration">
                     Don't have an account yet?
                     <br>
-                    <a class="" href="#">
+                    <a class="" href="{{ url('/register') }}">
                         Create an account
                         </a>
                 </div>
