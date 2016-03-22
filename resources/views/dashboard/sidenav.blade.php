@@ -2,7 +2,7 @@
     <div id="sidebar" tabindex="5000" style="overflow: hidden; outline: none;">
         <ul class="sidebar-menu" id="nav-accordion" style="display: block;">
             <p class="avatar"><a href="#"><img src="{{ Auth::user()->getAvatar() }}" class="img-circle" width="80"></a></p>
-            <h5 class="centered">Christopher Vundi</h5>
+            <h5 class="centered">{{ Auth::user()->name }}</h5>
             <li class="mt">
                 <a href="{{ url('profile/tutorials') }}">
                 <i class="fa fa-dashboard"></i>
