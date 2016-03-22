@@ -15,7 +15,7 @@
         <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
             <a class="navbar-brand" href="{{ url('/') }}">Ocademy</a>
             <ul class="nav navbar-nav pull-right">
-                <li class="nav-item">
+                <li class="nav-item" style="padding-right: 20px">
                     <a class="nav-link" href="{{ url('/tutorials') }}">Tutorials</a>
                 </li>
                 @if (Auth::guest())
@@ -30,7 +30,7 @@
 
                         <ul class="dropdown-menu" role="menu" style="background: #3F4B5B">
                             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            <li><a href="{{ url('/profile/tutorials') }}"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
+                            <li style="padding-top: 20px"><a href="{{ url('/profile/tutorials') }}"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
                         </ul>
                     </li>
                 @endif
