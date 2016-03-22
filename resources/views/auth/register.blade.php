@@ -55,13 +55,6 @@
                         <a href="{{ url('/auth/github') }}" class="btn btn-github"><i class="fa fa-github"></i> Github</a>
                     </div>
                 </div>
-                <div class="registration">
-                    Don't have an account yet?
-                    <br>
-                    <a class="" href="#">
-                        Create an account
-                        </a>
-                </div>
             </div>
         </form>
     </div>
