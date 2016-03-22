@@ -32,7 +32,7 @@
                     @foreach ($comments as $comment)
                         <li class="comment">
                             <article>
-                                <img src="{{ $comment->user->avatar }}" alt="avatar" class="avatar" width="50px" height="50px">
+                                <img src="{{ $comment->user->getAvatar() }}" alt="avatar" class="avatar" width="50px" height="50px">
                                 <div class="comment-meta">
                                     <h6 class="author">{{ $comment->user->name }}, {{ $comment->created_at->diffForHumans() }}</h6>
                                 </div>
