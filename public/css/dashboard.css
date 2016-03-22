@@ -177,8 +177,8 @@ ul.sidebar-menu li a.active i {
 .my-button:active,
 .my-button:visited,
 .my-button:focus {
-    background-color: #3F4B5B;
-    border-color: #3F4B5B !important;
+    background-color: #68dff0;
+    border-color: #68dff0 !important;
     color: white;
     font-weight: 300;
 }
