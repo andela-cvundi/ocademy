@@ -7,7 +7,12 @@
                 <div class="course-content content" style="padding-top: 20px">
                     <div class="container">
                         <div class="row">
-                            <h2>My tutorials
+                            <h2>
+                            @if ($tutorials->count() == 0)
+                                Sorry you dont have any tutorials. Upload one
+                            @else
+                                My tutorials
+                            @endif
                                 <a href="{{ url('tutorials/create') }}">
                                     <button type="button" class="btn btn-default pull-right my-button">
                                         <i class="fa fa-plus"></i>  Add Tutorial
