@@ -21,6 +21,11 @@
         @endif
 
         <div class="row">
+
+        @if ($tutorials->count() == 0)
+            <h2 class="text-center">No tutorials in this category</h2>
+        @endif
+
         @foreach ($tutorials as $tutorial)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
@@ -46,4 +51,5 @@
         </div>
     </div>
 </div>
+@include('layouts.footer')
 @endsection
