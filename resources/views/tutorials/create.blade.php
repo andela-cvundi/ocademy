@@ -29,7 +29,7 @@
                                 </select>
                             </div>
                             <div class="form-group has-feedback">
-                                <textarea class="form-control" rows="3" placeholder="describe your video here" name="description"></textarea>
+                                <textarea class="form-control" rows="3" placeholder="describe your video here" name="description" required></textarea>
                                 <span class="fa fa-info form-control-feedback"></span>
                             </div>
                             <div class="row">
