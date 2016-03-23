@@ -9,6 +9,18 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
      */
     protected $baseUrl = 'http://localhost';
 
+
+    /**
+     * Setup the testing environment,
+     * Call the parent Setup and run mirations
+     */
+    public function setUp()
+    {
+        parent::setUp();
+
+        Config::set('database.default', 'sqlite');
+        Artisan::call('migrate:refresh');
+    }
     /**
      * Creates the application.
      *
