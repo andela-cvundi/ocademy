@@ -30,7 +30,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/home', 'HomeController@index');
     Route::get('/', 'TutorialsController@welcome');
 
-    // OAuth Routes
+    /**
+     * Auth routes
+     *
+     * redirect to social auth login using socialite
+     * Handle social auth provider feedback data
+     */
     Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
     Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
 
