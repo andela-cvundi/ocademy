@@ -28,9 +28,9 @@
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
-                        <ul class="dropdown-menu" role="menu" style="background: #3F4B5B">
+                        <ul class="dropdown-menu" role="menu" style="background: #3F4B5B; width: 180px">
                             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            <li style="padding-top: 20px"><a href="{{ url('/profile/tutorials') }}"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
+                            <li style="padding-top: 20px"><a href="{{ url('/profile/tutorials') }}"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a></li>
                         </ul>
                     </li>
                 @endif
