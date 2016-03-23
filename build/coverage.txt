@@ -1,0 +1,24 @@
+
+
+Code Coverage Report:     
+  2016-03-23 09:24:45     
+                          
+ Summary:                 
+  Classes: 51.85% (14/27) 
+  Methods: 20.00% (10/50) 
+  Lines:   16.52% (37/224)
+
+\Ocademy\Console::Kernel
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+\Ocademy\Exceptions::Handler
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\Ocademy\Http\Controllers::TutorialsController
+  Methods:   8.33% ( 1/12)   Lines:   5.66% (  3/ 53)
+\Ocademy\Providers::AppServiceProvider
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\Ocademy\Providers::AuthServiceProvider
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  2/  2)
+\Ocademy\Providers::EventServiceProvider
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  2/  2)
+\Ocademy\Providers::RouteServiceProvider
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  4/  4)

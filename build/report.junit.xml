@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Application Test Suite" tests="1" assertions="1" failures="1" errors="0" time="0.429810">
+    <testsuite name="ExampleTest" file="/Users/Vickris/www/sites/ocademy/tests/ExampleTest.php" tests="1" assertions="1" failures="1" errors="0" time="0.429810">
+      <testcase name="testBasicExample" class="ExampleTest" file="/Users/Vickris/www/sites/ocademy/tests/ExampleTest.php" line="14" assertions="1" time="0.429810">
+        <failure type="Illuminate\Foundation\Testing\HttpException">ExampleTest::testBasicExample
+A request to [http://localhost] failed. Received status code [500].
+
+/Users/Vickris/www/sites/ocademy/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithPages.php:178
+/Users/Vickris/www/sites/ocademy/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithPages.php:72
+/Users/Vickris/www/sites/ocademy/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithPages.php:53
+/Users/Vickris/www/sites/ocademy/tests/ExampleTest.php:16
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>

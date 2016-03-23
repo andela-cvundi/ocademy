@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1458725085">
+  <project timestamp="1458725085">
+    <package name="Ocademy">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Category.php">
+        <class name="Category" namespace="Ocademy">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="16" type="method" name="tutorials" crap="2" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <metrics loc="20" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Comment.php">
+        <class name="Comment" namespace="Ocademy">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="15" type="method" name="user" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="20" type="method" name="Tutorial" crap="2" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <metrics loc="24" ncloc="21" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Tutorial.php">
+        <class name="Tutorial" namespace="Ocademy">
+          <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="15" type="method" name="category" crap="2" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="19" type="method" name="user" crap="2" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="27" type="method" name="comments" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <metrics loc="31" ncloc="28" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/User.php">
+        <class name="User" namespace="Ocademy">
+          <metrics methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="17" coveredelements="0"/>
+        </class>
+        <line num="28" type="method" name="tutorials" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="38" type="method" name="getAvatarFromGravatar" crap="2" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="48" type="method" name="getAvatar" crap="6" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="58" type="method" name="updateAvatar" crap="2" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <metrics loc="63" ncloc="36" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="17" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Ocademy\Console\Commands">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Console/Commands/Inspire.php">
+        <class name="Inspire" namespace="Ocademy\Console\Commands">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="29" type="method" name="handle" crap="2" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <metrics loc="33" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Ocademy\Console">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Console/Kernel.php">
+        <class name="Kernel" namespace="Ocademy\Console">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="25" type="method" name="schedule" crap="1" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <metrics loc="30" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="Ocademy\Events">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Events/Event.php">
+        <class name="Event" namespace="Ocademy\Events">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="8" ncloc="6" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Ocademy\Exceptions">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Exceptions/Handler.php">
+        <class name="Handler" namespace="Ocademy\Exceptions">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+        </class>
+        <line num="34" type="method" name="report" crap="1" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="46" type="method" name="render" crap="1" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <metrics loc="50" ncloc="30" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </file>
+    </package>
+    <package name="Ocademy\Http\Controllers\Auth">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/Auth/AuthController.php">
+        <class name="AuthController" namespace="Ocademy\Http\Controllers\Auth">
+          <metrics methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="0" elements="50" coveredelements="0"/>
+        </class>
+        <line num="40" type="method" name="__construct" crap="2" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="51" type="method" name="validator" crap="2" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="66" type="method" name="create" crap="2" count="0"/>
+        <line num="67" type="stmt" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <line num="71" type="stmt" count="0"/>
+        <line num="72" type="stmt" count="0"/>
+        <line num="73" type="stmt" count="0"/>
+        <line num="80" type="method" name="redirectToProvider" crap="2" count="0"/>
+        <line num="81" type="stmt" count="0"/>
+        <line num="82" type="stmt" count="0"/>
+        <line num="83" type="stmt" count="0"/>
+        <line num="90" type="method" name="handleProviderCallback" crap="6" count="0"/>
+        <line num="91" type="stmt" count="0"/>
+        <line num="92" type="stmt" count="0"/>
+        <line num="93" type="stmt" count="0"/>
+        <line num="94" type="stmt" count="0"/>
+        <line num="95" type="stmt" count="0"/>
+        <line num="96" type="stmt" count="0"/>
+        <line num="98" type="stmt" count="0"/>
+        <line num="100" type="stmt" count="0"/>
+        <line num="102" type="stmt" count="0"/>
+        <line num="103" type="stmt" count="0"/>
+        <line num="108" type="method" name="findOrCreateUser" crap="12" count="0"/>
+        <line num="109" type="stmt" count="0"/>
+        <line num="110" type="stmt" count="0"/>
+        <line num="112" type="stmt" count="0"/>
+        <line num="113" type="stmt" count="0"/>
+        <line num="114" type="stmt" count="0"/>
+        <line num="116" type="stmt" count="0"/>
+        <line num="117" type="stmt" count="0"/>
+        <line num="118" type="stmt" count="0"/>
+        <line num="119" type="stmt" count="0"/>
+        <line num="120" type="stmt" count="0"/>
+        <line num="121" type="stmt" count="0"/>
+        <line num="122" type="stmt" count="0"/>
+        <line num="123" type="stmt" count="0"/>
+        <line num="124" type="stmt" count="0"/>
+        <metrics loc="125" ncloc="80" classes="1" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="0" elements="50" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/Auth/PasswordController.php">
+        <class name="PasswordController" namespace="Ocademy\Http\Controllers\Auth">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="28" type="method" name="__construct" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <metrics loc="32" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Ocademy\Http\Controllers">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/CategoryController.php">
+        <class name="CategoryController" namespace="Ocademy\Http\Controllers">
+          <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="__construct" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="21" type="method" name="index" crap="2" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="31" type="method" name="store" crap="2" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <metrics loc="41" ncloc="30" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/CommentsController.php">
+        <class name="CommentsController" namespace="Ocademy\Http\Controllers">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="12" ncloc="10" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/Controller.php">
+        <class name="Controller" namespace="Ocademy\Http\Controllers">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="13" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/HomeController.php">
+        <class name="HomeController" namespace="Ocademy\Http\Controllers">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="15" type="method" name="__construct" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="25" type="method" name="index" crap="2" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <metrics loc="29" ncloc="19" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/ProfileController.php">
+        <class name="ProfileController" namespace="Ocademy\Http\Controllers">
+          <metrics methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="0" elements="31" coveredelements="0"/>
+        </class>
+        <line num="18" type="method" name="edit" crap="2" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="26" type="method" name="update" crap="2" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="42" type="method" name="updatePic" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="56" type="method" name="myTutorials" crap="2" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="48" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="0" elements="31" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Controllers/TutorialsController.php">
+        <class name="TutorialsController" namespace="Ocademy\Http\Controllers">
+          <metrics methods="12" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="3" elements="65" coveredelements="4"/>
+        </class>
+        <line num="14" type="method" name="__construct" crap="1" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="24" type="method" name="welcome" crap="1.12" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="35" type="method" name="index" crap="2" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="47" type="method" name="getByCategory" crap="2" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="59" type="method" name="create" crap="2" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="71" type="method" name="store" crap="2" count="0"/>
+        <line num="73" type="stmt" count="0"/>
+        <line num="74" type="stmt" count="0"/>
+        <line num="79" type="stmt" count="0"/>
+        <line num="80" type="stmt" count="0"/>
+        <line num="81" type="stmt" count="0"/>
+        <line num="82" type="stmt" count="0"/>
+        <line num="83" type="stmt" count="0"/>
+        <line num="84" type="stmt" count="0"/>
+        <line num="86" type="stmt" count="0"/>
+        <line num="95" type="method" name="show" crap="2" count="0"/>
+        <line num="97" type="stmt" count="0"/>
+        <line num="98" type="stmt" count="0"/>
+        <line num="99" type="stmt" count="0"/>
+        <line num="101" type="stmt" count="0"/>
+        <line num="110" type="method" name="edit" crap="2" count="0"/>
+        <line num="112" type="stmt" count="0"/>
+        <line num="113" type="stmt" count="0"/>
+        <line num="115" type="stmt" count="0"/>
+        <line num="125" type="method" name="update" crap="2" count="0"/>
+        <line num="127" type="stmt" count="0"/>
+        <line num="128" type="stmt" count="0"/>
+        <line num="134" type="stmt" count="0"/>
+        <line num="135" type="stmt" count="0"/>
+        <line num="136" type="stmt" count="0"/>
+        <line num="138" type="stmt" count="0"/>
+        <line num="139" type="stmt" count="0"/>
+        <line num="141" type="stmt" count="0"/>
+        <line num="144" type="method" name="like" crap="6" count="0"/>
+        <line num="146" type="stmt" count="0"/>
+        <line num="148" type="stmt" count="0"/>
+        <line num="149" type="stmt" count="0"/>
+        <line num="150" type="stmt" count="0"/>
+        <line num="152" type="stmt" count="0"/>
+        <line num="153" type="stmt" count="0"/>
+        <line num="162" type="method" name="comment" crap="2" count="0"/>
+        <line num="164" type="stmt" count="0"/>
+        <line num="165" type="stmt" count="0"/>
+        <line num="166" type="stmt" count="0"/>
+        <line num="167" type="stmt" count="0"/>
+        <line num="168" type="stmt" count="0"/>
+        <line num="169" type="stmt" count="0"/>
+        <line num="170" type="stmt" count="0"/>
+        <line num="171" type="stmt" count="0"/>
+        <line num="180" type="method" name="destroy" crap="2" count="0"/>
+        <line num="182" type="stmt" count="0"/>
+        <line num="184" type="stmt" count="0"/>
+        <metrics loc="186" ncloc="132" classes="1" methods="12" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="3" elements="65" coveredelements="4"/>
+      </file>
+    </package>
+    <package name="Ocademy\Http">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Kernel.php">
+        <class name="Kernel" namespace="Ocademy\Http">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="52" ncloc="33" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Ocademy\Http\Middleware">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Middleware/Authenticate.php">
+        <class name="Authenticate" namespace="Ocademy\Http\Middleware">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="18" type="method" name="handle" crap="20" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <metrics loc="30" ncloc="22" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Middleware/EncryptCookies.php">
+        <class name="EncryptCookies" namespace="Ocademy\Http\Middleware">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="10" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Middleware/RedirectIfAuthenticated.php">
+        <class name="RedirectIfAuthenticated" namespace="Ocademy\Http\Middleware">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+        </class>
+        <line num="18" type="method" name="handle" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <metrics loc="26" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Middleware/VerifyCsrfToken.php">
+        <class name="VerifyCsrfToken" namespace="Ocademy\Http\Middleware">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="10" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Ocademy\Http\Requests">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Http/Requests/Request.php">
+        <class name="Request" namespace="Ocademy\Http\Requests">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="10" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <file name="/Users/Vickris/www/sites/ocademy/app/Http/routes.php">
+      <line num="28" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="56" type="stmt" count="1"/>
+      <line num="57" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="62" type="stmt" count="1"/>
+      <metrics loc="62" ncloc="34" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="18" coveredelements="18"/>
+    </file>
+    <package name="Ocademy\Jobs">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Jobs/Job.php">
+        <class name="Job" namespace="Ocademy\Jobs">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="21" ncloc="11" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Ocademy\Providers">
+      <file name="/Users/Vickris/www/sites/ocademy/app/Providers/AppServiceProvider.php">
+        <class name="AppServiceProvider" namespace="Ocademy\Providers">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+        </class>
+        <line num="17" type="method" name="anonymous function" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="27" type="method" name="register" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <metrics loc="31" ncloc="19" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Providers/AuthServiceProvider.php">
+        <class name="AuthServiceProvider" namespace="Ocademy\Providers">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="25" type="method" name="boot" crap="1" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <metrics loc="31" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Providers/EventServiceProvider.php">
+        <class name="EventServiceProvider" namespace="Ocademy\Providers">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="27" type="method" name="boot" crap="1" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <metrics loc="33" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/Users/Vickris/www/sites/ocademy/app/Providers/RouteServiceProvider.php">
+        <class name="RouteServiceProvider" namespace="Ocademy\Providers">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        </class>
+        <line num="25" type="method" name="boot" crap="1" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="40" type="method" name="anonymous function" crap="1" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <metrics loc="44" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+    </package>
+    <metrics files="28" loc="1132" ncloc="742" classes="27" methods="50" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="224" coveredstatements="37" elements="274" coveredelements="47"/>
+  </project>
+</coverage>
