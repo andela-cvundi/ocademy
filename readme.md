@@ -1,27 +1,108 @@
-# Laravel PHP Framework
+# Ocademy
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+**Ocademy** is an online learning platform where people share tutorilas online and also learn from the tutorials posted by other people.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Features
 
-## Official Documentation
+**1. Create account**
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Create an account using your email, facebook, twitter or github account in less than one minute.
 
-## Contributing
+**2. Manage tutorials**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Get to the dashboard area and upload, edit or delete tutorils.
 
-## Security Vulnerabilities
+**3. See what other peple have shared**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+On the landing page you will see the latest tutorials that people have uploaded. Not satisfied? You can visit the tutorials page and filter tutorials by categories
 
-## License
+**4. Favorite the tutorials you find interesting**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+You can click on the like button below any tutorial you find interesting when watching the video
+
+**5. Comment on videos**
+
+You can comment on tutorials that you are watching, and also see waht other people have to say about the tutorial.
+
+
+### Technologies used
+1. [Laravel 5.2](https://laravel.com/)
+2. [Bootstrap CSS](http://getbootstrap.com/)
+3. [Postgres SQL](http://www.postgresql.org/)
+
+A list of open source laravel packages used can be see in the [composer.json](https://github.com/andela-cvundi/ocademy/blob/staging/composer.json).
+
+
+### Set up Locally
+Make sure you have the requirements for laravel setup. If not, read the [Laravel Installation Guide](https://laravel.com/docs/5.2)
+
+Clone this repo
+```bash
+$ git clone https://github.com/andela-cvundi/ocademy.git
+```
+Go into the **ocademy** folder
+```bash
+$ cd ocademy
+```
+Copy the **env.example** file into a **.env** and fill out the followign fields.
+```text
+APP_ENV=local
+APP_DEBUG=true
+APP_KEY=*your-app-key*
+
+DB_HOST=localhost
+DB_DATABASE=*your-db*
+DB_USERNAME=*your-db-username*
+DB_PASSWORD=*your-password*
+
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+
+FACEBOOK_ID=
+FACEBOOK_SECRET=
+FACEBOOK_URL=
+
+GITHUB_ID=
+GITHUB_SECRET=
+GITHUB_URL=
+
+TWITTER_ID=
+TWITTER_SECRET=
+TWITTER_URL=
+
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+CLOUDINARY_NAME=
+CLOUDINARY_URL=
+
+```
+
+Once you have all these set up, run composer, to install dependencies and run migrations.
+```bash
+$ composer install
+```
+
+If you set up this in you local environment, run
+```bash
+$ php artisan serve
+```
+
+If you used vagrant / Homestead, head over to where your Hosts point to.
+
+To test this project, simply run
+```bash
+$ vendor/bin/phpunit
+```
+
+### License
+
+The Watch n Learn project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+### Credits
+
+- [Christopher Vundi][link-author]
+
+[link-author]: https://github.com/andela-cvundi
