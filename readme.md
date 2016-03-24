@@ -1,5 +1,7 @@
 # Ocademy
 
+[![Build Status](https://travis-ci.org/andela-cvundi/ocademy.svg?branch=master)](https://travis-ci.org/andela-cvundi/ocademy)
+[![Coverage Status](https://coveralls.io/repos/github/andela-cvundi/ocademy/badge.svg?branch=develop)](https://coveralls.io/github/andela-cvundi/ocademy?branch=develop)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
 **Ocademy** is an online learning platform where people share tutorilas online and also learn from the tutorials posted by other people.
