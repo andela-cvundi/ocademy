@@ -13,15 +13,7 @@ class CategoryController extends Controller
     {
         $this->middleware('auth');
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('pages.category');
-    }
+
     /**
      * Store a newly created resource in storage.
      *

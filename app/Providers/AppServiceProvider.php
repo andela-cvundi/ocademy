@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Validator::extend('youtube', function ($attribute, $value, $parameters, $validator) {
             return [$value] == preg_grep("%^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/watch\?v=([^&]+)%", [$value]);
-        }, 'Invalid youtube video url');
+        });
     }
 
     /**
