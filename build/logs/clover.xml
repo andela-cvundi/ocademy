@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1458801641">
-  <project timestamp="1458801641">
+<coverage generated="1458803256">
+  <project timestamp="1458803256">
     <package name="Ocademy">
       <file name="/Users/Vickris/www/sites/ocademy/app/Category.php">
         <class name="Category" namespace="Ocademy">

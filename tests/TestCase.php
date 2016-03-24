@@ -21,6 +21,12 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         Config::set('database.default', 'sqlite');
         Artisan::call('migrate:refresh');
     }
+
+    public function testExample()
+    {
+        $this->assertTrue(true);
+    }
+
     /**
      * Creates the application.
      *
