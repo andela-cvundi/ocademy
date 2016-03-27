@@ -8,7 +8,7 @@
             </ul>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-inverse bg-faded">
+    <nav class="navbar navbar-light navbar-inverse bg-faded navbar-fixed-top">
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
         ☰
         </button>
