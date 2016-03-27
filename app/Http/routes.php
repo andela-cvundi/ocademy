@@ -40,22 +40,28 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
 
     // Profile
-    Route::get('profile/settings', [
-        'middleware' => 'auth',
-        'uses'       => 'ProfileController@edit',
-    ]);
-    Route::post('profile/settings', [
-        'middleware' => 'auth',
-        'uses'       => 'ProfileController@update',
-    ]);
-    Route::post('profile/updatePic', [
-        'middleware' => 'auth',
-        'uses'       => 'ProfileController@updatePic',
-    ]);
-    Route::get('profile/tutorials', [
-        'middleware' => 'auth',
-        'uses'       => 'ProfileController@myTutorials',
-    ]);
+    Route::group(['prefix' => 'profile'], function () {
+
+        Route::get('/settings', [
+            'middleware' => 'auth',
+            'uses'       => 'ProfileController@edit',
+        ]);
+
+        Route::post('/settings', [
+            'middleware' => 'auth',
+            'uses'       => 'ProfileController@update',
+        ]);
+
+        Route::post('/updatePic', [
+            'middleware' => 'auth',
+            'uses'       => 'ProfileController@updatePic',
+        ]);
+
+        Route::get('/tutorials', [
+            'middleware' => 'auth',
+            'uses'       => 'ProfileController@myTutorials',
+        ]);
+    });
 
     //Tutorials
     Route::resource('tutorials', 'TutorialsController');
