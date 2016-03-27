@@ -58,7 +58,7 @@ class TutorialTest extends TestCase
      *
      * @return void
      */
-    public function testEdittutorial()
+    public function testEditTutorial()
     {
         $title = 'Edit tut';
         $description = 'This ia a test description';
@@ -127,7 +127,7 @@ class TutorialTest extends TestCase
     public function testCommentWithoutAuth()
     {
         $tutorial = factory(Ocademy\Tutorial::class)->create();
-        $user = factory(Ocademy\User::class)->create();
+
         $this->visit('/tutorials/'.$tutorial->id)
             ->dontSee('Submit');
     }
