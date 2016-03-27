@@ -57,7 +57,7 @@ $(document).ready(function() {
                 $('.comments-list').prepend(newComment);
 
                 var comments = $('#comment-count').html();
-                console.log(comments);
+
                 var comments = Number(comments) + 1;
                 $('#comment-count').html(comments);
             });
