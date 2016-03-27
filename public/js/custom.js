@@ -24,7 +24,7 @@ $(document).ready(function() {
 
         $x.fail(function(response) {
             swal({
-                title: "Error",
+                title: "Network Error",
                 text: "Error favoriting tutorial",
                 type: "error",
                 showCancelButton: true
@@ -69,7 +69,7 @@ $(document).ready(function() {
                 $('#comment-count').html(comments);
             });
 
-            $addNewComment.fail(function(response) {
+            addNewComment.fail(function(response) {
             swal({
                 title: "Error",
                 text: "Error commenting on tutorial",
