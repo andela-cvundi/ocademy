@@ -7,3 +7,4 @@
 <link rel="stylesheet" href="/css/styles.css">
 <link rel="stylesheet" href="/css/dashboard.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="{{ URL::asset('bower/sweetalert/dist/sweetalert.css', env('APP_ENV') == 'production') }}" rel="stylesheet">
