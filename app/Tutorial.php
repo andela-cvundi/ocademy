@@ -12,10 +12,14 @@ class Tutorial extends Model
 
     protected $fillable = ['title', 'description', 'url', 'user_id', 'category_id'];
 
+    /**
+     * Tutorial has many categories relationship.
+     */
     public function category()
     {
         return $this->belongsTo('Ocademy\Category');
     }
+
     public function user()
     {
         return $this->belongsTo('Ocademy\User');
