@@ -10,16 +10,25 @@ $(document).ready(function() {
             method: 'POST',
             url: '/tutorials/' + tut_id + '/like'
         });
+
         var num = Number($('#count').text());
 
         $x.done(function(response) {
-            console.log(response.message);
 
             if (response.message == 'liked') {
                 $('#count').text(' ' + ++num);
             } else if (response.message == 'unliked') {
                 $('#count').text(' ' + --num);
             }
+        });
+
+        $x.fail(function(response) {
+            swal({
+                title: "Error",
+                text: "Error favoriting tutorial",
+                type: "error",
+                showCancelButton: true
+            });
         });
     });
 
@@ -59,8 +68,18 @@ $(document).ready(function() {
                 var comments = Number(comments) + 1;
                 $('#comment-count').html(comments);
             });
+
+            $addNewComment.fail(function(response) {
+            swal({
+                title: "Error",
+                text: "Error commenting on tutorial",
+                type: "error",
+                showCancelButton: true
+            });
+        });
         }
     });
+
     $('.delete-tutorial').on("click", function(event) {
         event.preventDefault();
         var this_ = $(this);
