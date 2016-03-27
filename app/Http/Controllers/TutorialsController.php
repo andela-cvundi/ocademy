@@ -179,8 +179,16 @@ class TutorialsController extends Controller
      */
     public function destroy($id)
     {
-        Tutorial::destroy($id);
+        $delete = Tutorial::destroy($id);
 
-        return redirect('/profile/tutorials');
+        if ($delete) {
+            return  [
+                'message' => 'deleted'
+            ];
+        }
+
+        return [
+            'message' => 'error'
+        ];
     }
 }
