@@ -71,7 +71,7 @@ $(document).ready(function() {
 
             addNewComment.fail(function(response) {
             swal({
-                title: "Error",
+                title: "Network Error",
                 text: "Error commenting on tutorial",
                 type: "error",
                 showCancelButton: true
