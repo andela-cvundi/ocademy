@@ -5,7 +5,8 @@ $(document).ready(function() {
         }
     });
     $('#like').on("click", function() {
-        var tut_id = $(this).attr('tutorial-id')
+        var this_ = $(this);
+        var tut_id = this_.attr('tutorial-id')
         $x = $.ajax({
             method: 'POST',
             url: '/tutorials/' + tut_id + '/like'
@@ -16,8 +17,15 @@ $(document).ready(function() {
         $x.done(function(response) {
 
             if (response.message == 'liked') {
+                this_
+                .removeClass('unliked')
+                .addClass('liked');
                 $('#count').text(' ' + ++num);
             } else if (response.message == 'unliked') {
+
+                this_
+                .removeClass('liked')
+                .addClass('unliked');
                 $('#count').text(' ' + --num);
             }
         });
