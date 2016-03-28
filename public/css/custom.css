@@ -25,3 +25,11 @@ footer {
     background-color: #3F4B5B;
     border-color: #3F4B5B;
 }
+
+.liked {
+    color: red;
+}
+
+.unliked {
+    color: gray;
+}
