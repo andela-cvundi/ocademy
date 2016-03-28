@@ -10,8 +10,8 @@
                 <div class="course-image">
                     <iframe width="100%" height="500" src="http://www.youtube.com/embed/{{ $tutorial->url }}" allowfullscreen style="margin-bottom: 20px;"></iframe>
                 </div>
-                <meta name="csrf-token" content="{{ csrf_token() }}">
-                <i id="like" class="fa fa-heart" tutorial-id="{{ $tutorial->id }}"></i><span id="count"> {{ $tutorial->likeCount }}</span>
+
+                <i id="like" class="fa fa-heart{{ $tutorial->liked() ? ' liked' : ' unliked'}}" tutorial-id="{{ $tutorial->id }}" style="cursor: pointer;"></i><span id="count"> {{ $tutorial->likeCount }}</span>
                 <i class="fa fa-comment"></i><span  id="comment-count"> {{ $tutorial->comments->count() }}</span>
                 @if (Auth::user())
                     @if (Auth::user()->id == $tutorial->user_id)
