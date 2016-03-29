@@ -24,9 +24,9 @@
                     <p>{{ $tutorial->description }}</p>
                 </div>
                 <section id="comments">
-                    <h6 class="section-title">{{ $tutorial->comments->count() }} Comments</h6>
+                    <h6 class="section-title"><span id="ccount">{{ $tutorial->comments->count() }}</span> Comments</h6>
                     @if ($tutorial->comments->count() == 0)
-                        <p>No comments for this video</p>
+                        <p class="no-coments-message">No comments for this video</p>
                     @endif
                     <ol class="comments-list">
                     @foreach ($comments as $comment)
