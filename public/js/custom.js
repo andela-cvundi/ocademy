@@ -70,11 +70,12 @@ $(document).ready(function() {
                 newComment += '</li>';
 
                 $('.comments-list').prepend(newComment);
+                $('.no-coments-message').remove();
 
                 var comments = $('#comment-count').html();
-
                 var comments = Number(comments) + 1;
-                $('#comment-count').html(comments);
+                $('#comment-count').html(' ' + comments);
+                $('#ccount').html(comments);
             });
 
             addNewComment.fail(function(response) {
