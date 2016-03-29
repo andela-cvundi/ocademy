@@ -30,10 +30,9 @@
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                     <div class="mdl-card__title" style="background: url('http://img.youtube.com/vi/{{ $tutorial->url }}/0.jpg'); background-size: 100%">
-                        <h3 style="margin-top: 100px;">{{ $tutorial->title }}</h3>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        {{ $tutorial->description }}
+                        {{ $tutorial->title }}
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="card-text" style="display: inline-block;" >
