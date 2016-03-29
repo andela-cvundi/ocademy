@@ -31,12 +31,16 @@ $(document).ready(function() {
         });
 
         $x.fail(function(response) {
-            swal({
-                title: "Network Error",
-                text: "Error favoriting tutorial",
-                type: "error",
-                showCancelButton: true
-            });
+            if (response.status == 401) {
+                swal("Login to favorite!");
+            } else {
+                swal({
+                    title: "Network Error",
+                    text: "Error favoriting tutorial",
+                    type: "error",
+                    showCancelButton: true
+                });
+            }
         });
     });
 
