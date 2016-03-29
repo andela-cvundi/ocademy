@@ -24,6 +24,8 @@ class ChangeUsernameNotToBeUnique extends Migration
      */
     public function down()
     {
-        $table->string('username')->unique()->nullable()->change();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('username')->unique()->nullable()->change();
+        });
     }
 }
