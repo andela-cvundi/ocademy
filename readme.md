@@ -1,4 +1,4 @@
-# [Ocademy](https://ocademy.herokuapp.com/)
+# Ocademy
 
 [![Build Status](https://travis-ci.org/andela-cvundi/ocademy.svg?branch=master)](https://travis-ci.org/andela-cvundi/ocademy)
 [![Coverage Status](https://coveralls.io/repos/github/andela-cvundi/ocademy/badge.svg?branch=develop)](https://coveralls.io/github/andela-cvundi/ocademy?branch=develop)
