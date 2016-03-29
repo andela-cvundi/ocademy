@@ -42,7 +42,7 @@ class ProfileController extends Controller
     public function updatePic(Request $request)
     {
         $this->validate($request, [
-            'avatar' => 'required',
+            'avatar' => 'required|max:10240',
         ]);
         $img = $request->file('avatar');
         Cloudder::upload($img);
