@@ -22,11 +22,15 @@
                         {{ $tutorial->description }}
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ url('tutorials/'.$tutorial->id) }}" data-upgraded=",MaterialButton,MaterialRipple">
-                        Get Started
-                        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
-                        <i class="fa fa-heart" style="margin-left: 70px;"></i><span id="count"> {{ $tutorial->likeCount }}</span>
-                        <i class="fa fa-comment"></i><span id="count"> {{ $tutorial->comments->count() }}</span>
+                        <div class="card-text" style="display: inline-block;" >
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ url('tutorials/'.$tutorial->id) }}" data-upgraded=",MaterialButton,MaterialRipple">
+                            Get Started
+                            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                        </div>
+                        <div class="card-buttons" style="display: inline-block; float: right; margin-top: 9px">
+                             <i class="fa fa-heart"></i><span id="count"> {{ $tutorial->likeCount }}</span>
+                            <i class="fa fa-comment"></i><span id="count"> {{ $tutorial->comments->count() }}</span>
+                        </div>
                     </div>
                 </div>
             </div>

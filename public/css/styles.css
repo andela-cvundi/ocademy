@@ -1177,3 +1177,12 @@ input.button{
 h3.succes_message {
     color:#3C3;
 }
+
+
+.card-text {
+    display: inline-block;
+}
+
+.card-buttons {
+    display: inline-block;
+}
