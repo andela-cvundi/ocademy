@@ -41,7 +41,6 @@ Route::group(['middleware' => 'web'], function () {
 
     // Profile
     Route::group(['prefix' => 'profile'], function () {
-
         Route::get('/settings', [
             'middleware' => 'auth',
             'uses'       => 'ProfileController@edit',
